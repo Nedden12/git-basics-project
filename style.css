@@ -1,29 +1,93 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  line-height: 1.5;
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  /* Pozicionálás */
+  
+  .profile-card {
+    width: 480px;
+    max-width: calc(100vw - 10px);
+  }
+     .head, .links {
+    text-align: center;
+  }
+  .head, .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  img {
+    
+    width: 110px;
+    height: 160px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(70%);
+      }
+  .profile-image {
+    margin-top: -60px;
+  }
+  /* Contact links */
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    display: inline-block;
+    width:15%;
+    height:0%;
+  }
+  .head, .about {
+    margin-bottom: 10%;
+  }
+  
+  .content {
+    padding: 5% 10%;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  .profile-card {
+    background-color: rgba(255, 255, 255, 0.973);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.87) 5px 5px 15px;
+    border-color: rgba(185, 7, 7, 0.8);
+    border-style: groove;
+      }
+  img {
+    padding: 2px;
+    background-color: rgba(185, 7, 7, 0.8);
+  }
+  .content {
+    border-top: 1px solid rgba(185, 7, 7, 0.8);
+  }
+  img:hover {
+    transform: scale(1.1);
+    filter: grayscale(30%);
+  }
+  .font1 {
+    font-size: 150%;
+  }
+  a:link {
+    color: rgba(185, 7, 7, 0.8);
+ }
+ a:visited {
+  background-color: rebeccapurple;
 }
-body {
-  width: 100%;
-  height: 100vh;
-  background: url('assets/freedom.jpg') no-repeat center;
-  background-size: cover;
-  color: #333;
+a:hover {
+  color: red;
 }
-.wrapper {
-  padding-top: 4rem;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-}
-.quote {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 2.5rem;
-}
-.author {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.5rem;
-  font-style: italic;
-}
+  
+  
+  
+  
